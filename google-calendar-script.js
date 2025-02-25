@@ -70,7 +70,8 @@ function formatDate(dateString) {
   const date = new Date(dateString);
   const month = date.getMonth();
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
-  const monthDay = `${months[month]} ${date.getDay()}`
+  const monthDay = `${months[month]} ${date.getDate()}`
+  console.log(date.getDate())
   const time = date.toLocaleTimeString([], {timeStyle: "short"});
   const dateSeparated = {
     'monthDay': monthDay,
