@@ -5,6 +5,7 @@
     margin-left:35px;
     
 }
+
 html {
     scroll-behavior: smooth;
   }
@@ -188,7 +189,7 @@ a{
     content:"";
     height:100%;
     width:100%;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), 90%, rgba(0, 0, 0, 0.354));
+    background-image: linear-gradient(180deg, rgba(110, 9, 9, .3), 90%, rgba(0, 15, 80, 0.74));
     display:block;
     position: absolute;
 }
@@ -253,7 +254,7 @@ a{
     }
     
     .headshot{
-        max-width: 351px;
+        max-width: 500px;
         display: block;
         z-index: 100;
     }
@@ -336,7 +337,8 @@ margin:auto;
 
     }
     .headshot{
-        max-width: 420px;
+        align-items: center;
+        max-width: 620px;
         display: block;
         z-index: 100;
     }

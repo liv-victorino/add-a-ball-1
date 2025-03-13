@@ -9,6 +9,8 @@ body{
     margin: auto;
     max-width: 700px;
 }
+
+
 .event{
     display: flex;
     flex-direction: column;
@@ -97,6 +99,11 @@ body{
 }
 
 
+.landing-image-container{
+    display:flex;
+    align-items: center;
+    height:400px;
+}
 .biography-content{
     margin:20px;
 }
@@ -104,6 +111,12 @@ body{
     .biography-content{
         max-width:700px;
         margin:auto;
+    }
+
+    .landing-image-container{
+        display:flex;
+        align-items: center;
+        height:500px;
     }
     .info-cell{
         display:flex;
@@ -170,6 +183,11 @@ body{
     .container{
         max-width: 100%;   
         margin: 0 107px 0 107px;
+    }
+    .landing-image-container{
+        display:flex;
+        align-items: center;
+        height:500px;
     }
     .banner-section{
         max-width: 349px;
