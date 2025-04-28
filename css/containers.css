@@ -3,23 +3,20 @@
 body{
     margin:0;
 }
-.body-image{
-    width:90%;
-    display: block;
-    margin: auto;
-    max-width: 700px;
-}
 
+.page-margin{
+    max-width: 0px 50px;
+}
 
 .event{
     display: flex;
     flex-direction: column;
 }
+
 .testimonial-container{
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding:45px;
 }
 
 .review{
@@ -27,30 +24,33 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+.review-container{
+
+
+
+}
 .testimonial{
     display: flex;
     flex-direction:row;
     margin: 15px 0 15px 0;
 }
-#contact-form{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.col-right{
+    margin:20px 0px 0px 0px ;
+    text-align:left;
 }
-.infographic-content{
-    display:flex;
-    flex-direction: column;
-}
+
+
 .container{
     max-width: 100%;  
     margin:auto; 
 }
+
 .line {
     height: 1px;
     width:70%;
     background: rgb(78, 78, 78);
-    position: absolute;
+    position: ablute;
     left:15%;
   }
 #banner-section{
@@ -58,36 +58,22 @@ body{
 }
 
 .calendar-container{
-    width:70%;
-    padding: 10px 15px;
     
 }
-.section-header{
+
+.banner-info-container{
+    padding: 25px 0;
     display:flex;
-    align-items: flex-end;
-    height:200px;
-    color:rgb(255, 255, 255);
-    padding-bottom:15px;
-    margin-left:20px;
+    flex-direction: column;
 }
 
-
-.info-cell{
-    display:flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: center;
-
-}
 
 #header-section{
-    background-color: rgb(78, 78, 78);
+    background: linear-gradient(180deg,#3C1346, 15%,  #180421);
     /*background-image: linear-gradient(180deg, #1f1f1fa1,30%, rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.158)), url(/images/building.jpg);*/
 }
 .banner-content{
     
-    padding: 60px 0px 60px 0px;
-    width:100%;
     display:flex;
     flex-direction: column;
     position:relative;
@@ -102,11 +88,13 @@ body{
 .landing-image-container{
     display:flex;
     align-items: center;
-    height:400px;
+    height:500px;
+    justify-content: center;
 }
 .biography-content{
     margin:20px;
 }
+/*
 @media only screen and (min-width: 600px) and (max-width: 1074px){
     .biography-content{
         max-width:700px;
@@ -141,20 +129,34 @@ body{
     }
 
 }
+*/
+
 
 @media only screen and (min-width: 1074px){
 
     .info-cell{
         flex-direction: column;
+    }
 
-    
+    .col-right{
+        margin:0px;
+        text-align:right;
     }
     .testimonial-text{
         height: 100px;
     }
 
+    .testimonial-photo-container{
+        width:500px;
+
+    }
+    .banner-info-container{
+        height:100px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .calendar-container{
-        width:80%;
     }
     .testimonial-container{
         display:flex;
@@ -165,32 +167,22 @@ body{
         margin-top:30px;
         display: flex;
         flex-direction:row;
-        width:800px; 
+        max-width:800px; 
     }
-    .content{
-        max-width: 1247px;
-        margin:auto;
-    }
-    .infographic-content{
-        display:flex;
-        flex-direction: row;
-        max-width: 1000px;
-    }
+
     .biography-content{
-        max-width:700px;
         margin:auto;
     }
     .container{
         max-width: 100%;   
-        margin: 0 107px 0 107px;
     }
+
     .landing-image-container{
         display:flex;
         align-items: center;
         height:500px;
     }
     .banner-section{
-        max-width: 349px;
     }
     .banner-content{
         flex-direction: row;

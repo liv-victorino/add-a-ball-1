@@ -1,15 +1,19 @@
 /*global and mobile*/
 
 .landing-logo{
-    height:50px;
-    margin-left:35px;
+    height:85px;
     
+}
+p{
+    margin:5px 0px;
 }
 
 html {
     scroll-behavior: smooth;
   }
-
+.testimonial-photo{
+    max-width: 70%;
+}
 body{
     font-size: 16px;
 }
@@ -28,48 +32,54 @@ body{
     margin-bottom: 15px;
 }
 
+.section-header{
+    display:flex;
+    align-items: center;
+    height:120px;
+    color:#FAED23;
+}
+
 footer div{
-    padding: 10px 0px;
     text-align: center;
     background-color: #1F1F1F;
-    color:white;
+    color:#FAED23;
 }
 
 footer div a{
-    color:white;
+    color:#FAED23;
     text-decoration: underline;
 }
 .banner-2-heading{
     font-size: 60px;
     font-weight:bold;
 }
+
+#banner-info-section{
+    /*background: linear-gradient(180deg, , 50%, );*/
+    background: linear-gradient(180deg, #180421, 85%, #3C1346);
+    background-color: white;
+}
+
+.banner-info-container > * {
+    display:flex;
+    color:#FAED23;
+    align-items:center;
+}
+
 #banner-section {
-    background-image: url(../assets/Splash.jpg);
+    height:200px;
+    background-image: url(../assets/rug.jpg);
     background-position: left center;
 }
 #banner-2{
     flex-direction: row;
-    margin: 0px 20px;
 }
 
 .services-outline-heading{
     font-size: 20px;
 }
 
-.menu-li{
-    font-size: 15px;
-}
 
-.info-cell .caption{
-    margin-left:10px;
-}
-.info-cell{
-    height:80px;
-    width:100%;
-    
-
-
-}
 .image-cell{
     display:none;
     height:200px;
@@ -89,6 +99,7 @@ footer div a{
 #thank-you-message{
     height: 500px;
 }
+
 .button{
     margin-bottom:21px;
     border-radius: 8px;
@@ -102,20 +113,6 @@ footer div a{
 
 }
 
-.form-input{
-    margin-bottom:21px;
-    border-radius: 8px;
-    font-size: 16px;
-    width: 295px;
-    border: none;
-}
-.form-input:not(textarea){
-    border:0;
-    height:48px;
-    font-family: Helvetica;
-    padding:0px 0px 0px 10px;
-
-}
 
 textarea{
     padding:10px 0px 0px 10px;
@@ -129,7 +126,6 @@ body{
 }
 
 .contact-content{
-    margin:0px 20px;
 }
 .caption{
     font-size: 15px;
@@ -137,7 +133,6 @@ body{
 
 }
 .content{
-    padding:25px 0;
 }
 
 
@@ -155,7 +150,7 @@ body{
 
 
 a{
-    color:black;
+    color:#FAED23;
     text-decoration: none;
     
 }
@@ -181,7 +176,7 @@ a{
 .heading{
     font-weight: bold;
     font-family: 'Helvetica Neue', 'Helvetica', 'san-serif';
-    font-size: 50px;
+    font-size: 30px;
 }
 /* this was giving me so much trouble, i guess the solution was setting the banner content to position:relative*/
 
@@ -189,14 +184,13 @@ a{
     content:"";
     height:100%;
     width:100%;
-    background-image: linear-gradient(180deg, rgba(110, 9, 9, .3), 90%, rgba(0, 15, 80, 0.74));
+    background-image: linear-gradient(180deg, rgba(80, 2, 163, 0.705), 40%,rgba(210, 5, 152, 0.192) );
     display:block;
     position: absolute;
 }
 
 .landing-text{
     font-size: 30px;
-    padding:34px;
 }
 
 .row-left{
@@ -207,10 +201,14 @@ a{
     flex-direction: column;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1074px){
+@media only screen and (max-width: 1074px){
     .services-outline-heading{
         font-size: 25px;
     }
+    .page-margin{
+        margin:0px 50px;
+    }
+
     .info-cell .caption{
         margin-left:0px;
     }
@@ -221,22 +219,8 @@ a{
         justify-content: center;
     }
     .content{
-        padding:65px 0;
     }
-    .info-cell{
-        height:200px;
-        width:100%;
     
-    }
-    .form-input{
-        margin-bottom:21px;
-        border-radius: 8px;
-        font-size: 16px;
-        width:70%;
-        max-width: 529px;
-        border: none;
-    }
-
     #banner-2{
         margin: none;
     }
@@ -245,43 +229,43 @@ a{
     .caption{
         font-size: 20px;
         font-weight: bold;
-        margin-left:0px;
 
     }
     .row-left, .row-right{
         width:50%;
         text-align: center;
     }
-    
-    .headshot{
-        max-width: 500px;
-        display: block;
-        z-index: 100;
-    }
     #header-2-caption{
         display:block;
     }
 
     .landing-logo{
-        height:80px;
-        margin-left:57px;
-        
+        height:100px;        
     }
-    .image-cell{
-        display:block;
+}
+@media only screen and (min-width: 900px) and (max-width:1074px){
+    .page-margin{
+        margin:0px 90px;
     }
 }
 
-@media only screen and (min-width: 1074px){
 
+@media only screen and (min-width: 1074px){
+    p{
+        margin:10px 0px;
+    }
     .services-outline-heading{
         font-size: 35px;
+    }
+
+    .page-margin{
+        margin:0px 130px;
     }
     .content{
         padding:65px 0;
     }
     .heading{
-        font-size: 100px;
+        font-size: 60px;
     }
     .info-cell .caption{
         margin-left:0px;
@@ -291,21 +275,11 @@ a{
         font-weight:bold;
     }
     #banner-2{
-margin:auto;
-    }
-    .contact-content{
-        max-width: 700px;
         margin:auto;
     }
-
-    .form-input{
-        margin-bottom:21px;
-        border-radius: 8px;
-        font-size: 16px;
-        width:70%;
-        max-width: 529px;
-        border: none;
+    .contact-content{
     }
+
     .row-left, .row-right{
         width:50%;
     }
@@ -315,12 +289,9 @@ margin:auto;
     #banner-2 .row-right{
         width:70%;
     }
-    .info-cell{
-        justify-content: left;
-        height:200px;
-        width:100%;
-        
 
+    .testimonial-photo{
+        max-width:100%;
     }
     .row-left .info-cell{
     align-items: flex-start;
@@ -336,19 +307,7 @@ margin:auto;
         margin-left:0px;
 
     }
-    .headshot{
-        align-items: center;
-        max-width: 620px;
-        display: block;
-        z-index: 100;
-    }
-    .landing-logo{
-        margin-left:55px;
-        
-    }
-    .image-cell{
-        display:block;
-    }
+
     #header-2-caption{
         display:block;
     }

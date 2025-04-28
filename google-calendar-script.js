@@ -50,15 +50,38 @@ function displayEvents(events) {
       const description = event.description || '';
       const formattedDate = formatDate(event.start.dateTime);
       eventItem.innerHTML = 
-        `<div class="event">
-                <div class="event-details">
-                    <div style="font-size:25px;font-weight:bold">${summary}</div>
-                    <span style="font-size:20px;">${description}</span>
-                    <div style="font-size:15px;">${formattedDate.monthDay}</div>
-                    <div style="font-size:15px;">Doors: ${formattedDate.time} </div>
-                    <div style="font-size:15px;">21+, $10 cash at door</div>
-                </div>
-            </div>`
+        `
+        <div class="card">
+               <div style="display:flex;flex-direction:column;background-color: pink;width:150px;justify-content: center;text-align: center;">
+               ${formattedDate.dayOfWeek}
+                  <DIV>
+                  ${formattedDate.monthDay}
+                  </DIV>
+               </div>
+
+               <div style="display:flex;flex-direction:column;flex:1">
+                  <div style="background-color:aliceblue;">
+                     <h3 style="padding: 0 20px 0 20px;">
+                     ${summary}
+                     </h3>
+                  </div>
+                  <div style="padding: 0 20px 0 20px;">
+
+                     <p>${summary}</p>
+                     <p>${description}</p>
+                     <p>Doors: ${formattedDate.time}</p>
+
+                  </div>
+               </div>
+
+            </div>
+               <br>
+               <br>
+               <br>
+               <br>
+               `
+
+            
       eventsList.appendChild(eventItem);
     });
   } else {
@@ -69,13 +92,18 @@ function displayEvents(events) {
 function formatDate(dateString) {
   const date = new Date(dateString);
   const month = date.getMonth();
+  const day = date.getUTCDay();
+  const days = ["Sun", "Mon", "Tues", "Weds", "Thurs", "Fri", "Sat", "Sun"];
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
   const monthDay = `${months[month]} ${date.getDate()}`
+  const dayOfWeek = `${days[day]}`;
+
   console.log(date.getDate())
   const time = date.toLocaleTimeString([], {timeStyle: "short"});
   const dateSeparated = {
     'monthDay': monthDay,
-    'time': time
+    'time': time,
+    'dayOfWeek': dayOfWeek
   }
   return dateSeparated; 
 }

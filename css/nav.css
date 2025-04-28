@@ -3,43 +3,49 @@
 /*mobile and global*/
 
 
-.nav-horizontal{
-    display:none;
-}
-.home-button{
-    margin-right:auto;
-}
 
+.home-button{
+    display: flex;
+    margin-right:auto;
+    flex-direction: row;
+
+}
+.nav-horizontal{
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+}
+.menu-li{
+    list-style: none;
+    margin:0 20px;
+    font-size:17px;
+    color: #FAED23;
+}
 .nav-ul-dropdown{
     display:flex;
     flex-direction: column;
 }
 .nav-bar-container{
+    background-color:#180421;
+    justify-content: space-between;
+
+}
+.nav-bar-content{
+    padding:15px 0;
     display:flex;
     justify-content: flex-end;
-    align-items: center;
-    background-color:#702e73;
+}
+
+.content{
 }
 .content-container{
-    margin:10px;
-    width:90%;
+
 }
 .hamburger-button{
     display:block;
     border:0px;
     background-color: rgba(255, 255, 255, 0);
     margin-right:32px;
-}
-.hamburger-menu{
-    display:flex;
-    flex-direction: column;
-    overflow:hidden;
-    width:40px;
-    height:40px;
-    background-color: rgb(255, 255, 255);
-    align-content: space-evenly;
-    padding: 10px;
-    justify-content: space-around;
 }
 
 .cs-line{
@@ -60,74 +66,53 @@
     text-align: center;
 }
 
-.landing-logo{
-    margin-right:30px;
-}
-.socials{
-    display:none;
-    max-width:50px;
-}
+
 
 .inactive{
     display:none;
+}
+.socials{
+    max-width: 40px;
+
 }
 
 /*tablet*/
 @media only screen and (min-width: 780px) and (max-width: 1074px){
 .socials{
-    display:block;
-    margin-right:50px;
-}
-.landing-logo{
-    margin-left:54px;
-}
-.nav-horizontal{
-    display:block;
-}
-.nav-bar-container{
-    justify-content: flex-start;
-    padding: 30px 0px;
+
 
 }
-.menu-li{
-    list-style: none;
-    padding: 0 10px 0 10px;
-}
-.hamburger-button{
-    display:none;
+
+
+
+.home-button{
+    display:flex;
+    flex-direction: row;
 }
 
-}
 
 /*desktop*/
-@media only screen and (min-width: 1025px){
+@media only screen and (min-width: 1074px){
+
+.home-button{
+    display:flex;
+    flex-direction: row;
+}
 .socials{
-    display:block;
-    margin-right:50px;
+
 }
 body{
     margin: 0px;
     background-image: url();
 }
 
-.nav-bar-container{
-    padding: 30px 0px;
+
+
+.content{
+
 }
 
 
-.menu-li{
-    list-style: none;
-    padding: 0 20px 0 20px;
-}
-.landing-logo{
-    margin-right:100px;
-}
-
-.nav-ul-horizontal{
-    display: flex;
-    margin-left:0px;
-    padding-left:0px;
-}
 
 .nav-ul-dropdown{
     display:flex;
@@ -135,12 +120,10 @@ body{
     display:none;
 }
 
-.nav-horizontal{
-    display:block;
-    align-self: center;
-}
+
 
 .hamburger-button{
     display:none;
+}
 }
 }
