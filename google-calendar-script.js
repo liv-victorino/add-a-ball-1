@@ -52,7 +52,7 @@ function displayEvents(events) {
       eventItem.innerHTML = 
         `
         <div class="card">
-               <div style="display:flex;flex-direction:column;background-color: pink;width:150px;justify-content: center;text-align: center;">
+               <div style="display:flex;flex-direction:column;color:white;background-color: #2B053D;width:150px;font-size:30px;justify-content: center;text-align: center;">
                ${formattedDate.dayOfWeek}
                   <DIV>
                   ${formattedDate.monthDay}
@@ -61,7 +61,7 @@ function displayEvents(events) {
 
                <div style="display:flex;flex-direction:column;flex:1">
                   <div style="background-color:aliceblue;">
-                     <h3 style="padding: 0 20px 0 20px;">
+                     <h3 style="padding: 0 20px 0 20px; font-size:30px; font-weight:300;text-shadow: 1px 1px 3px #989898;">
                      ${summary}
                      </h3>
                   </div>
@@ -93,8 +93,8 @@ function formatDate(dateString) {
   const date = new Date(dateString);
   const month = date.getMonth();
   const day = date.getUTCDay();
-  const days = ["Sun", "Mon", "Tues", "Weds", "Thurs", "Fri", "Sat", "Sun"];
-  const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
+  const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+  const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUNE", "JULY", "AUG", "SEPT", "OCT", "NOV", "DEC"]
   const monthDay = `${months[month]} ${date.getDate()}`
   const dayOfWeek = `${days[day]}`;
 

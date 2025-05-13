@@ -2,12 +2,28 @@
 
 body{
     margin:0;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
 }
+
 
 .page-margin{
     max-width: 0px 50px;
 }
+.x{
+    align-content: center;
+}
 
+.background-photo-effect{
+    display: flex;
+    flex-direction: column;
+}
+.good-image{
+    width:100%;
+}
+.testimonial-text{
+    font-size: 30px;
+}
 .event{
     display: flex;
     flex-direction: column;
@@ -17,6 +33,7 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
+    z-index: 2;
 }
 
 .review{
@@ -25,8 +42,13 @@ body{
     justify-content: center;
 }
 .review-container{
+    padding:50px;
 
+}
 
+.testimonial-photo-container{
+    display:flex;
+    padding:50px;
 
 }
 .testimonial{
@@ -57,20 +79,31 @@ body{
     position: relative;
 }
 
-.calendar-container{
-    
+#calendar-section{
+    background-color: #FFD2ED;
 }
-
 .banner-info-container{
     padding: 25px 0;
     display:flex;
     flex-direction: column;
 }
+.review{
+    height:170px;
+}
+#testimonial-section{
+    color:white;
+    background: linear-gradient(180deg, #180421, 85%, #3C1346);
+}
 
-
-#header-section{
+.header-section{
     background: linear-gradient(180deg,#3C1346, 15%,  #180421);
     /*background-image: linear-gradient(180deg, #1f1f1fa1,30%, rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.158)), url(/images/building.jpg);*/
+}
+
+#about{
+
+    background: linear-gradient(180deg,#180421, 85%, #3C1346 );
+
 }
 .banner-content{
     
@@ -91,8 +124,14 @@ body{
     height:500px;
     justify-content: center;
 }
+
+
 .biography-content{
     margin:20px;
+}
+
+.footer{
+    padding: 40px;
 }
 /*
 @media only screen and (min-width: 600px) and (max-width: 1074px){
@@ -131,24 +170,36 @@ body{
 }
 */
 
+@media only screen and (min-width: 700px){
+    .background-photo-effect{
+        display: flex;
+        flex-direction: row;
+    }
+    .x{
+        align-content: center;
+    }
+}
 
 @media only screen and (min-width: 1074px){
-
+    .x{
+        align-content: center;
+    }
     .info-cell{
         flex-direction: column;
     }
 
     .col-right{
         margin:0px;
-        text-align:right;
+        text-align:rigdht;
     }
     .testimonial-text{
-        height: 100px;
+        font-size: 30px;
     }
 
     .testimonial-photo-container{
         width:500px;
-
+        flex-direction: column;
+    
     }
     .banner-info-container{
         height:100px;
@@ -158,7 +209,11 @@ body{
     }
     .calendar-container{
     }
+
+  
+
     .testimonial-container{
+        z-index:2;
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;

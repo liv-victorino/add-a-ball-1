@@ -1,193 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/sidenav.css">
-    <link rel="stylesheet" href="css/containers.css">
-
-   <script src="google-calendar-script.js"></script>
-   <script src="https://apis.google.com/js/api.js" onload=handleClientLoad()></script>
-</head>
-
-<header id="navigation">
-    <div class="nav-bar-container ">
-      <div class="page-margin nav-bar-content">
-         <a class="home-button" aria="back to home" href="home.html">
-         <img alt="Logo" class="landing-logo" src="assets/addaballLogo.png" />
-         <div style="flex-direction: column;align-content: center; text-align: center; margin-left:30px">
-            <div>Add-A-Ball and Sand Dollar</div>
-            <div>Arcade + Live Music</div>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="css/nav.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/sidenav.css">
+      <link rel="stylesheet" href="css/containers.css">
+      <script src="google-calendar-script.js"></script>
+      <script src="https://apis.google.com/js/api.js" onload=handleClientLoad()></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jura:wght@300..700&display=swap" rel="stylesheet"> 
+   </head>
+   <header id="navigation">
+      <div class="nav-bar-container ">
+         <div class="page-margin nav-bar-content">
+            <a class="home-button" aria="back to home" href="home.html">
+               <img alt="Logo" class="landing-logo" src="assets/addaballLogo.png" />
+               <div id="nav-heading" style="flex-direction: column;align-content: center; text-align: center; margin-left:30px">
+                  <div>Add-A-Ball and Sand Dollar</div>
+                  <div>Arcade + Live Music</div>
+               </div>
+            </a>
+            <div class="nav-horizontal">
+               <ul class="nav-ul-horizontal">
+                  <li class="menu-li "> 
+                     <a class=" menu-li" href="#contact">Contact</a>
+                  </li>
+               </ul>
+               <a href="https://www.linkedin.com/in/halhoward1/"><img alt="Add-a-ball logo" class="socials" src="assets/ig.png"></a>
+            </div>
          </div>
-         </a>
-
-         <div class="nav-horizontal">
-            <ul class="nav-ul-horizontal">
-               <li class="menu-li "> 
-                  <a class=" menu-li" href="#contact">Contact</a>
-
-               </li>
-            </ul>
-            <a href="https://www.linkedin.com/in/halhoward1/"><img alt="Add-a-ball logo" class="socials" src="assets/ig.png"></a>
-         </div>
-
       </div>
-    </div>
- </header>
-<body>
-    <div id="banner-section">
-        <div class="container">
-         <!--
-            <div class="banner-content">
-               <span class="landing-text">
-                  <p>Open Daily 2pm-2am
-                  </p>
-                  <p>
-                     21+
-                  </p>
+   </header>
+   <body>
+      <div id="banner-section">
+         <div class="container">
+            <!--
+               <div class="banner-content">
+                  <span class="landing-text">
+                     <p>Open Daily 2pm-2am
+                     </p>
+                     <p>
+                        21+
+                     </p>
+                     
+                  </span> 
                   
-               </span> 
+                  <div class="landing-image-container">
+                     <img alt="banner foreground" class="headshot" src="/assets/LandingLogo.png">
+                  
+                  </div>
                
-               <div class="landing-image-container">
-                  <img alt="banner foreground" class="headshot" src="/assets/LandingLogo.png">
-               
+               -->
+         </div>
+      </div>
+      </div>
+      <div id="banner-info-section">
+         <div class="container">
+            <div class="page-margin banner-info-container ">
+               <div >
+                  <div>
+                     <p>2pm-2am, 7 days a week</p>
+                     <p>21+</p>
+                     <p>Est. 2011</p>
+                  </div>
                </div>
-
-            -->
-            </div>
-        </div>
-    </div>
-       
-    <div id="banner-info-section">
-      <div class="container">
-         <div class="page-margin banner-info-container ">
-            <div >
-               <div>
-                  <p>2pm-2am, 7 days a week</p>
-                  <p>21+</p>
-                  <p>Est. 2011</p>
-
-               </div>
-            </div>
-            <div class="col-right ">
-               <div>
-                  
-               <p>Live shows every Friday and Saturday night</p>
-               <p>DJ every Thursday Night</p>
-               <p>Pinball, refreshments, and live music</p>
-
+               <div class="col-right ">
+                  <div>
+                     <p>Live shows every Friday and Saturday night</p>
+                     <p>DJ every Thursday Night</p>
+                     <p>Pinball, refreshments, and live music</p>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
-   
-
-     <div id="header-section">
-      <div class="container">
-         <div id="calendar" class="page-margin section-header">
-            <div class="heading">Calendar</div>
-         </div>
-      </div>
-   </div>
-   <div id="calendar-section">
-      <div class="container">
-         <div class="calendar-container page-margin">
-         
-
-            <div id="events-list">
-
-                  
+      <div class="header-section">
+         <div class="container">
+            <div id="calendar" class="page-margin section-header">
+               <div class="heading">Calendar</div>
             </div>
-           </div>
          </div>
       </div>
-   </div>
-
-   <style>
-      .card{
+      <div id="calendar-section">
+         <div class="container">
+            <div class="calendar-container page-margin">
+               <div id="events-list">
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <style>
+         .card{
          display:flex;
          width:100%;
-      }
-   </style>
-
-
-
-
-
-
-
-
-
-     <div id="header-section">
-      <div class="container">
-         <div id="testimonials" class="page-margin section-header">
-            <div class="heading">Testimonials</div>
+         }
+      </style>
+      <div class="header-section">
+         <div id="about"  class="container">
+            <div class="page-margin section-header">
+               <div class="heading">About</div>
+            </div>
          </div>
       </div>
-   </div>
-   <div id="testimonial-section">
-      <div class="container">
-         <div class="page-margin testimonial-container">
-            <div class="testimonial-photo-container">
-               <div>
-                  <img class="testimonial-photo" src="assets/addaball.jpg">
+      <div id="testimonial-section">
+         <div class="container">
+            <div class="background-photo-effect">
+               <div class="x" >
+                  <img class="good-image" src="assets/addaball.jpg">
                </div>
-               <div>
-                  <img class="testimonial-photo" src="assets/addaball.jpg">
+               <div class="testimonial-container">
+                  <div class="review-container">
+                     <div class="testimonial">
+                        <div class="review">
+                           <div class="testimonial-text">
+                              "Seattle wouldn't be Seattle without Add-a-Ball.”
+                              <div class="testimonial-writer">-Neils Bohr</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="testimonial">
+                        <div class="review">
+                           <div class="testimonial-text">
+                              "Everyone here is such an individual." 
+                              <div class="testimonial-writer"> - Jimmy's niece.</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
-            <div class="review-container">
-            <div class="testimonial">
-               <div><img class="user-photo"src="assets/user.png"></div>
-               <div class="review">
-                  <div><img id="rating" src="assets/5_star.png"></div>
-                  <div class="testimonial-text"> Parturient hendrerit justo natoque metus rhoncus venenatis quis eleifend eros. Inceptos turpis dui fames suscipit sagittis praesent. Tristique lacinia vulputate adipiscing leo hac. Molestie eu vel vivamus erat odio mauris fringilla senectus.</div>
-               </div>
          </div>
-         <div class="testimonial">
-            <div><img class="user-photo"src="assets/user.png"></div>
-            <div class="review">
-               <div><img id="rating" src="assets/5_star.png"></div>
-               <div class="testimonial-text"> Parturient hendrerit justo natoque metus rhoncus venenatis quis eleifend eros. Inceptos turpis dui fames suscipit sagittis praesent. Tristique lacinia vulputate adipiscing leo hac. Molestie eu vel vivamus erat odio mauris fringilla senectus.</div>
+      </div>
+      <div class="header-section">
+         <div id="contact"  class="container">
+            <div class="page-margin section-header">
+               <div class="heading">Contact</div>
             </div>
+         </div>
       </div>
-      </div>
-
-      </div>
-   </div>
-     <div id="header-section">
-        <div id="contact"  class="container">
-           <div id="about" class="section-header">
-              <div class="heading">Contact</div>
-           </div>
-        </div>
-     </div>
-     
-     <div id="contact-section">
-        <div  class="container">
-           <div class="contact-content page-margin ">
-             
-               <div><span>For booking inquiries:</span><a href="mailto:addaballbooking@gmail.com">addaballbooking@gmail.com</a> </div>
+      <div id="contact-section">
+         <div class="container">
+            <div class="contact-content page-margin ">
+               <div><span>For booking inquiries: </span><a style="text-decoration: underline" href="mailto:addaballbooking@gmail.com">addaballbooking@gmail.com</a> </div>
                <br>
                <br>
-               <div><span>For all other inquiries:</span><a href="mailto:addaballamusements@gmail.com">addaballamusements@gmail.com</a> </div>
-           </div>
-        </div>
-     </div>
-     <div class="line"></div>
-     <footer>
-        <div> Copyright © 2025 Add-A-Ball Amusements
-        </div>
-        <div>
-           <a href="Assets\JHH Executive Consulting Privacy Policy.pdf">Privacy Policy</a>
-           
-        </div>
-    
-
-</body>
-<script src="index.js"></script>
+               <div><span>For all other inquiries: </span><a style="text-decoration: underline" href="mailto:addaballamusements@gmail.com">addaballamusements@gmail.com</a> </div>
+            </div>
+         </div>
+      </div>
+      <div class="line"></div>
+      <footer>
+      <div class="footer" style="height:200px">
+         <div>
+            <a>Accessibility</a> / <a>Terms of Use</a> / <a>Privacy Policy</a>
+         </div>
+         <div>
+            <img alt="Logo" class="landing-logo" src="assets/addaballLogo.png" />
+         </div>
+         <div> 
+            © 2025 Add-A-Ball Amusements. All Rights Reserved.
+         </div>
+      </div>
+   </body>
+   <script src="index.js"></script>
 </html>
