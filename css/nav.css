@@ -7,8 +7,8 @@
 .home-button{
     display: flex;
     margin-right:auto;
-    flex-direction: row;
-
+    flex-direction: column;
+    min-width:200px;
 }
 .nav-horizontal{
     display:flex;
@@ -29,6 +29,12 @@
     background-color:#180421;
     justify-content: space-between;
 
+    
+}
+
+#nav-heading{
+    font-size: 11px;
+    font-weight: 700;
 }
 .nav-bar-content{
     padding:15px 0;
@@ -36,11 +42,6 @@
     justify-content: flex-end;
 }
 
-.content{
-}
-.content-container{
-
-}
 .hamburger-button{
     display:block;
     border:0px;
@@ -66,10 +67,7 @@
     text-align: center;
 }
 
-#nav-heading{
-    font-size: large;
-    font-weight: 700;
-}
+
 
 .inactive{
     display:none;
@@ -80,23 +78,15 @@
 }
 
 /*tablet*/
-@media only screen and (min-width: 780px) and (max-width: 1074px){
-.socials{
 
-
-}
-
-
-
-.home-button{
-    display:flex;
-    flex-direction: row;
-}
 
 
 /*desktop*/
 @media only screen and (min-width: 1074px){
-
+    #nav-heading{
+        font-size: large;
+        font-weight: 700;
+    }
 .home-button{
     display:flex;
     flex-direction: row;
@@ -107,12 +97,6 @@
 body{
     margin: 0px;
     background-image: url();
-}
-
-
-
-.content{
-
 }
 
 
@@ -128,5 +112,5 @@ body{
 .hamburger-button{
     display:none;
 }
-}
-}
+
+};

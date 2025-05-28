@@ -1,8 +1,10 @@
 /*global and mobile*/
 
+
+
 .landing-logo{
-    height:85px;
-    
+    width:80px;
+    margin:auto;
 }
 p{
     margin:5px 0px;
@@ -51,7 +53,7 @@ body{
 .section-header{
     display:flex;
     align-items: center;
-    height:120px;
+    height:100px;
     color:#FAED23;
 }
 
@@ -83,9 +85,9 @@ footer div a{
 }
 
 #banner-section {
-    height:200px;
-    background-image: url(../assets/rug.jpg);
-    background-position: left center;
+    height:400px;
+    background-image: url(../assets/wide-pano.jpg);
+    background-size: cover;
 }
 #banner-2{
     flex-direction: row;
@@ -189,8 +191,8 @@ a{
 
 .heading{
     font-weight: bold;
-    font-family: 'Helvetica Neue', 'Helvetica', 'san-serif';
-    font-size: 30px;
+    font-family: 'Caveat Brush','Helvetica Neue', 'Helvetica', 'san-serif';
+    font-size: 40px;
 }
 /* this was giving me so much trouble, i guess the solution was setting the banner content to position:relative*/
 
@@ -198,7 +200,6 @@ a{
     content:"";
     height:100%;
     width:100%;
-    background-image: linear-gradient(180deg, rgba(80, 2, 163, 0.705), 40%,rgba(210, 5, 152, 0.192) );
     display:block;
     position: absolute;
 }
@@ -253,9 +254,6 @@ a{
         display:block;
     }
 
-    .landing-logo{
-        height:100px;        
-    }
 }
 @media only screen and (min-width: 900px) and (max-width:1074px){
     .page-margin{
@@ -272,7 +270,9 @@ a{
     .services-outline-heading{
         font-size: 35px;
     }
-
+    .landing-logo{
+        width:100px;
+    }
     .page-margin{
         margin:0px 130px;
     }
@@ -280,7 +280,7 @@ a{
         padding:65px 0;
     }
     .heading{
-        font-size: 60px;
+        font-size: 50px;
     }
     .info-cell .caption{
         margin-left:0px;
