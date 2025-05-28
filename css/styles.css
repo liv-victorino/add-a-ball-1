@@ -1,5 +1,29 @@
 /*global and mobile*/
 
+.card-date{
+    display:flex;
+    flex-direction:column;
+    color:white;
+    background-color: #2B053D;
+    width:80px;
+    height:110px;
+    font-size:15px;
+    justify-content: center;
+    text-align: center;
+}
+.card-header{
+    padding: 0 10px 0 10px;
+     font-size:15px; 
+     font-weight:300;
+     text-shadow: 1px 1px 3px #989898;
+}
+
+.menu-li{
+    list-style: none;
+    margin:0 20px;
+    font-size:11px;
+    color: #FAED23;
+}
 
 
 .landing-logo{
@@ -8,7 +32,7 @@
 }
 p{
     margin:5px 0px;
-    font-size: 18px;
+    font-size: 12px;
 
 }
 #events-list{
@@ -217,11 +241,13 @@ a{
 }
 
 @media only screen and (max-width: 1074px){
+
+
     .services-outline-heading{
         font-size: 25px;
     }
     .page-margin{
-        margin:0px 50px;
+        margin:0px 20px;
     }
 
     .info-cell .caption{
@@ -256,6 +282,23 @@ a{
 
 }
 @media only screen and (min-width: 900px) and (max-width:1074px){
+
+    .menu-li{
+        list-style: none;
+        margin:0 20px;
+        font-size:14px;
+        color: #FAED23;
+    }
+    .card-date{
+        display:flex;
+        flex-direction:column;
+        color:white;
+        background-color: #2B053D;
+        width:150px;
+        font-size:30px;
+        justify-content: center;
+        text-align: center;
+    }
     .page-margin{
         margin:0px 90px;
     }
@@ -263,6 +306,29 @@ a{
 
 
 @media only screen and (min-width: 1074px){
+    .card-date{
+        display:flex;
+        flex-direction:column;
+        color:white;
+        background-color: #2B053D;
+        width:150px;
+        font-size:30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .menu-li{
+        list-style: none;
+        margin:0 20px;
+        font-size:17px;
+        color: #FAED23;
+    }
+    .card-header{
+        padding: 0 20px 0 20px;
+        font-size:30px;
+        font-weight:300;
+        text-shadow: 1px 1px 3px #989898;
+    }
+
     p{
         font-size: 20px;
         margin:10px 0px;

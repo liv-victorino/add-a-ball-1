@@ -52,7 +52,7 @@ function displayEvents(events) {
       eventItem.innerHTML = 
         `
         <div class="card">
-               <div style="display:flex;flex-direction:column;color:white;background-color: #2B053D;width:150px;font-size:30px;justify-content: center;text-align: center;">
+               <div class="card-date">
                ${formattedDate.dayOfWeek}
                   <DIV>
                   ${formattedDate.monthDay}
@@ -61,10 +61,11 @@ function displayEvents(events) {
 
                <div style="display:flex;flex-direction:column;flex:1">
                   <div style="background-color:aliceblue;">
-                     <h3 style="padding: 0 20px 0 20px; font-size:30px; font-weight:300;text-shadow: 1px 1px 3px #989898;">
+                     <h3 class="card-header">
                      ${summary}
                      </h3>
                   </div>
+
                   <div style="padding: 0 20px 0 20px;">
 
                      <p>${summary}</p>

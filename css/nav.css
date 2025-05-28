@@ -8,19 +8,14 @@
     display: flex;
     margin-right:auto;
     flex-direction: column;
-    min-width:200px;
+    min-width:180px;
 }
 .nav-horizontal{
     display:flex;
     flex-direction: row;
     align-self: center;
 }
-.menu-li{
-    list-style: none;
-    margin:0 20px;
-    font-size:17px;
-    color: #FAED23;
-}
+
 .nav-ul-dropdown{
     display:flex;
     flex-direction: column;
@@ -33,7 +28,7 @@
 }
 
 #nav-heading{
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 700;
 }
 .nav-bar-content{
@@ -73,6 +68,8 @@
     display:none;
 }
 .socials{
+    vertical-align: baseline;
+    width:30px;
     max-width: 40px;
 
 }
