@@ -8,7 +8,6 @@
     display: flex;
     margin-right:auto;
     flex-direction: column;
-    min-width:180px;
 }
 .nav-horizontal{
     display:flex;

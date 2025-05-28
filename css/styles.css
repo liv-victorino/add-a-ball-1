@@ -295,6 +295,8 @@ a{
         color:white;
         background-color: #2B053D;
         width:150px;
+        height:200px;
+
         font-size:30px;
         justify-content: center;
         text-align: center;
@@ -311,6 +313,8 @@ a{
         flex-direction:column;
         color:white;
         background-color: #2B053D;
+        height:200px;
+
         width:150px;
         font-size:30px;
         justify-content: center;
